@@ -1,41 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>GlitchPitch — Story</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GlitchPitch Story</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <div class="neon-grid">
-    <div class="grid-line horizontal"></div>
-    <div class="grid-line vertical"></div>
-  </div>
-
-  <header class="header">
-    <img src="assets/Glitch pitch original logo.png" alt="GlitchPitch Logo" class="logo">
-    <div class="tagline">Precision in Every Pixel</div>
-    <nav class="nav">
-      <a href="index.html" class="nav-button">Home</a>
-      <a href="shop.html" class="nav-button">Shop</a>
+  <!-- Header -->
+  <header>
+    <div class="logo">
+      <img src="images/logo.png" alt="GlitchPitch Logo">
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="story.html">Story</a>
+      <a href="shop.html">Shop</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#footer">Contact</a>
     </nav>
   </header>
 
-  <main class="content">
-    <h1>The GlitchPitch Story</h1>
-    <div class="story-text">
-      <p>GlitchPitch was born from the fusion of precision and creativity — where the discipline of sports meets the art of design.</p>
-      <p>Every curve of a baseball seam, every swing of a bat, and every pixel of light represents a commitment to flawless execution. We don’t chase perfection — we <em>engineer</em> it.</p>
-      <p>The glitch isn’t an error. It’s our signature — a reminder that innovation often starts where the system breaks.</p>
-      <p>From the field to the screen, GlitchPitch stands for bold energy, futuristic aesthetics, and the confidence to play beyond limits.</p>
-      <p><strong>Precision in Every Pixel.</strong></p>
+  <!-- Story Hero Section -->
+  <section id="story-hero" class="hero">
+    <h1>Our Story</h1>
+    <p>GlitchPitch was born from a love of precision, pixels, and performance. Every design reflects attention to detail and the pursuit of excellence.</p>
+  </section>
+
+  <!-- Story Content -->
+  <section id="story-content">
+    <h2>The Journey</h2>
+    <p>From the first sketch to the final pixel-perfect product, our team has worked tirelessly to bring a glitch-inspired, neon aesthetic to high-performance sports gear.</p>
+    <p>Our mission is simple: Precision in every pixel. Neon in every design. Glitch in every experience.</p>
+  </section>
+
+  <!-- Newsletter -->
+  <section id="newsletter">
+    <h2>Stay Updated</h2>
+    <div class="newsletter">
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
     </div>
+  </section>
 
-    <a href="index.html" class="nav-button back">Back to Home</a>
-  </main>
+  <!-- Footer -->
+  <footer id="footer">
+    &copy; 2025 GlitchPitch |
+    <a href="#">Instagram</a> |
+    <a href="#">Twitter</a> |
+    <a href="#">Privacy</a>
+  </footer>
 
-  <div id="glitch-container"></div>
-  <script src="script.js"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
