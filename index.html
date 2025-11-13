@@ -1,73 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <title>GlitchPitch — Home</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="GlitchPitch - Precision in Every Pixel">
+  <title>GlitchPitch</title>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-  <!-- Neon Grid Background -->
-  <div class="neon-grid">
-    <div class="grid-line horizontal"></div>
-    <div class="grid-line vertical"></div>
-  </div>
-
-  <!-- Header / Logo -->
-  <header class="header">
-    <img src="assets/Glitch pitch original logo.png" alt="GlitchPitch Logo" class="logo">
-    <div class="tagline">Precision in Every Pixel</div>
-    <nav class="nav">
-      <a href="story.html" class="nav-button">Story</a>
-      <a href="shop.html" class="nav-button">Shop</a>
+  <header>
+    <div class="logo"><strong>GlitchPitch</strong></div>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#story">Story</a>
+      <a href="#newsletter">Newsletter</a>
+      <a href="#footer">Contact</a>
     </nav>
   </header>
 
-  <!-- Main Product Showcase -->
-  <main class="main">
-    <section class="products-section" id="products">
-      <div class="products">
-        <div class="product-card">
-          <img src="assets/glitch pitch original logo bat.png" alt="Bat" class="product-img">
-          <div class="product-title">GlitchPitch Bat</div>
-          <div class="price">$100</div>
-          <button class="buy-button">Buy Now</button>
-        </div>
+  <section id="hero" class="hero">
+    <h1>Precision in Every Pixel</h1>
+    <p>Welcome to GlitchPitch, where style meets performance. Explore our unique sports-inspired gear.</p>
+    <button class="btn">Explore</button>
+  </section>
 
-        <div class="product-card">
-          <img src="assets/Glitch pitch hat original logo.png" alt="Hat" class="product-img">
-          <div class="product-title">GlitchPitch Hat</div>
-          <div class="price">$20</div>
-          <button class="buy-button">Buy Now</button>
-        </div>
+  <section id="story">
+    <h2>Our Story</h2>
+    <p>GlitchPitch was born from a love of precision, pixels, and performance. Every design reflects attention to detail and the pursuit of excellence. Join our journey as we redefine sports-inspired fashion with a glitchy twist.</p>
+  </section>
 
-        <div class="product-card">
-          <img src="assets/Glitch pitch hoodie original logo.png" alt="Hoodie" class="product-img">
-          <div class="product-title">GlitchPitch Hoodie</div>
-          <div class="price">$35</div>
-          <button class="buy-button">Buy Now</button>
-        </div>
-      </div>
-    </section>
-  </main>
+  <section id="newsletter">
+    <h2>Stay Updated</h2>
+    <div class="newsletter">
+      <input type="email" placeholder="Enter your email">
+      <button>Subscribe</button>
+    </div>
+  </section>
 
-  <!-- Neon glitch lines -->
-  <div class="glitch-lines" aria-hidden="true">
-    <div class="line line1"></div>
-    <div class="line line2"></div>
-    <div class="line line3"></div>
-  </div>
+  <footer id="footer">
+    &copy; 2025 GlitchPitch | 
+    <a href="#">Instagram</a> | 
+    <a href="#">Twitter</a> | 
+    <a href="#">Privacy</a>
+  </footer>
 
-  <!-- Neon streaks -->
-  <div class="neon-streak streak1"></div>
-  <div class="neon-streak streak2"></div>
-  <div class="neon-streak streak3"></div>
-  <div class="neon-streak streak4"></div>
-
-  <!-- Glitch container -->
-  <div id="glitch-container"></div>
-
-  <script src="script.js"></script>
+  <script src="js/main.js"></script>
 </body>
 </html>
