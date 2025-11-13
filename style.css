@@ -220,6 +220,52 @@ footer a:hover {
   80% { text-shadow: 2px 2px #FF00C8, -2px -2px #00E6FF; }
   100% { text-shadow: -2px -2px #FF00C8, 2px 2px #00E6FF; }
 }
+/* ===== Hero Heading Glitch Hover & Pulse ===== */
+.hero h1 {
+  transition: transform 0.2s ease, text-shadow 0.2s ease;
+  cursor: default;
+}
+
+.hero h1:hover {
+  animation: glitchHero 0.6s infinite;
+  transform: scale(1.05);
+}
+
+/* Hero glitch keyframes */
+@keyframes glitchHero {
+  0% { text-shadow: 2px 2px #FF00C8, -2px -2px #00E6FF; }
+  10% { text-shadow: -2px 2px #FF00C8, 2px -2px #00E6FF; transform: translate(1px,-1px); }
+  20% { text-shadow: 2px -2px #FF00C8, -2px 2px #00E6FF; transform: translate(-1px,2px); }
+  30% { text-shadow: -2px -2px #FF00C8, 2px 2px #00E6FF; transform: translate(2px,-2px); }
+  40% { text-shadow: 2px 2px #FF00C8, -2px -2px #00E6FF; transform: translate(-2px,1px); }
+  50% { text-shadow: -2px 2px #FF00C8, 2px -2px #00E6FF; transform: translate(1px,1px); }
+  60% { text-shadow: 2px -2px #FF00C8, -2px 2px #00E6FF; transform: translate(-1px,-1px); }
+  70% { text-shadow: -2px -2px #FF00C8, 2px 2px #00E6FF; transform: translate(2px,0); }
+  80% { text-shadow: 2px 2px #FF00C8, -2px -2px #00E6FF; transform: translate(-2px,0); }
+  90% { text-shadow: -2px 2px #FF00C8, 2px -2px #00E6FF; transform: translate(0,2px); }
+  100% { text-shadow: 2px -2px #FF00C8, -2px 2px #00E6FF; transform: translate(0,0); }
+}
+
+/* ===== Hero Button Glitch Pulse ===== */
+.hero .btn {
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.hero .btn:hover {
+  animation: glitchBtn 0.6s infinite;
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00E6FF, 0 0 30px #FF00C8;
+}
+
+/* Hero button glitch keyframes */
+@keyframes glitchBtn {
+  0% { box-shadow: 0 0 15px #00E6FF, 0 0 25px #FF00C8; }
+  20% { box-shadow: 0 0 20px #00E6FF, 0 0 35px #FF00C8; transform: translate(1px,-1px); }
+  40% { box-shadow: 0 0 25px #00E6FF, 0 0 40px #FF00C8; transform: translate(-1px,2px); }
+  60% { box-shadow: 0 0 20px #00E6FF, 0 0 35px #FF00C8; transform: translate(1px,1px); }
+  80% { box-shadow: 0 0 25px #00E6FF, 0 0 40px #FF00C8; transform: translate(-2px,-1px); }
+  100% { box-shadow: 0 0 15px #00E6FF, 0 0 25px #FF00C8; transform: translate(0,0); }
+}
 
 /* ===== Product Grid ===== */
 .product-grid {
@@ -311,4 +357,45 @@ footer a:hover {
   .newsletter input[type="email"]{ width: 80%; }
   .btn { padding: 0.8rem 1.5rem; }
   .product-grid { flex-direction: column; align-items: center; }
+}
+/* ===== Continuous Page Text Glitch ===== */
+
+/* Apply to all section headings and hero text */
+.hero h1, section h2, .product-card h3 {
+  animation: continuousGlitch 3s infinite linear alternate;
+}
+
+/* Apply subtle flicker to all paragraph text */
+section p, .hero p, .newsletter input, .newsletter button, footer {
+  animation: subtleFlicker 4s infinite linear alternate;
+}
+
+/* Continuous heading glitch keyframes */
+@keyframes continuousGlitch {
+  0% { text-shadow: 2px 2px #FF00C8, -2px -2px #00E6FF; }
+  10% { text-shadow: -2px 2px #FF00C8, 2px -2px #00E6FF; }
+  20% { text-shadow: 2px -2px #FF00C8, -2px 2px #00E6FF; }
+  30% { text-shadow: -2px -2px #FF00C8, 2px 2px #00E6FF; }
+  40% { text-shadow: 2px 2px #FF00C8, -2px -2px #00E6FF; }
+  50% { text-shadow: -2px 2px #FF00C8, 2px -2px #00E6FF; }
+  60% { text-shadow: 2px -2px #FF00C8, -2px 2px #00E6FF; }
+  70% { text-shadow: -2px -2px #FF00C8, 2px 2px #00E6FF; }
+  80% { text-shadow: 2px 2px #FF00C8, -2px -2px #00E6FF; }
+  90% { text-shadow: -2px 2px #FF00C8, 2px -2px #00E6FF; }
+  100% { text-shadow: 2px -2px #FF00C8, -2px 2px #00E6FF; }
+}
+
+/* Subtle paragraph flicker keyframes */
+@keyframes subtleFlicker {
+  0% { opacity: 0.95; }
+  10% { opacity: 0.92; }
+  20% { opacity: 0.98; }
+  30% { opacity: 0.93; }
+  40% { opacity: 0.97; }
+  50% { opacity: 0.95; }
+  60% { opacity: 0.94; }
+  70% { opacity: 0.97; }
+  80% { opacity: 0.96; }
+  90% { opacity: 0.94; }
+  100% { opacity: 0.95; }
 }
